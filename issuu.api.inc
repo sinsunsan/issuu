@@ -149,7 +149,7 @@ function issuu_api_issuu_documents_list($parameters=NULL) {
   $uri = issuu_prepare_uri($parameters);
   $result = drupal_http_request($uri);
   //TODO make some useful output
-  return($result);
+  var_dump($result);
 }
 
 function issuu_api_issuu_document_upload($file_location, $parameters=NULL) {
